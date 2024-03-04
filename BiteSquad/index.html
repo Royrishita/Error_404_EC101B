@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiteSquad</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <img id="logo" src="logo.png" alt="BiteSquad">
-    </header>
-    
-    <section class="hero">
-        <h2>Delicious Food Delivered to Your Door</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <a href="#" class="btn">Order Now</a>
-    </section>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                                    
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Bite <br> Squad</h2><br>
+                <h3>Order anytime you want</h3><br>
+                <a href="menu.html">
+                    <button type="button">Order Now<img src="arrow.png"></button>
+                </a>
+                
+            </div>
+            <div class="col-2">
+                <img src="food2.png" class="controller">
+                <div class="color-box"></div>
+            </div>           
+        </div>
+        <div class="social-links">
+            <a href=""></a>
+            <img src="fb.png">
+            <img src="tw.png">
+            <a href=" ">
+                <img src="ig.png">
+            </a>
+            
+        </div>
 
-    <section class="featured">
-        <div class="card">
-            <figure>
-                <img src="pizza.jpg" alt="Image 1">
-            </figure>
-            <h3>Pizza</h3>
-            <p>Delicious pizza made with fresh ingredients</p>
-            <p style="color: green;font-size: xx-large;">$10</p>
-          </div>
-        <div class="card">
-            <figure>
-                <img src="burger.jpg" alt="Image 1">
-            </figure>
-            <h3>Burger</h3>
-            <p>Classic burger with juicy patty and veggies</p>
-            <p style="color: green;font-size: xx-large;">$8</p>
-          </div>
-        <!-- Add more featured items here -->
-    </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 BiteSquad</p>
-    </footer>
 </body>
 </html>

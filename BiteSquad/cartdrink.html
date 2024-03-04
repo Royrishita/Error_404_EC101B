@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Add to Cart</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 300px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .product img {
+        max-width: 100%;
+    }
+
+    .product h2 {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    .product p {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    .price {
+        font-size: 1.25rem;
+        color: #e44d26;
+        margin-top: 10px;
+    }
+
+    .add-to-cart {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    .add-to-cart:hover {
+        background-color: #c63e20;
+    }
+</style>
+
+<body>
+    <div class="product">
+        <img src="image/chocolate_Drink.jpg" alt="Product Image">
+        <h2>Chocolate Drink</h2>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+        <p class="price">20.00</p>
+        <a href="order.html">
+            <button class="add-to-cart">Order Now</button>
+        </a>
+    </div>
+</body>
+
+</html>

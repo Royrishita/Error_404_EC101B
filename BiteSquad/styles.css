@@ -1,142 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('bg.jpg');
-    background-position: center;
-    background-size: cover;
-    overflow: none;
-    
-    width: auto;
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-header {
-    background: transparent;
-    color: #fff;
-    padding: 10px;
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-#logo{
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    padding: 10px;
-    margin-left: 20px;
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
-.hero {
-    /* background-image: url('hero.jpg');
-    background-size: cover;
-    background-position: center; */
-    color: #fff;
-    text-align: center;
-    height: auto;
-    /* padding: 100px 0; */
+nav ul li a:hover {
+    color: blue;
 }
 
-.hero h2 {
-    font-family: "Anton", sans-serif;
-    font-size: 64px;
-    padding: 0;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    /* font-weight: 700; */
-    color: #FDF0D5;
-}
-
-.hero p {
-    font-family: cursive;
-    font-size: 24px;
-    color: #e8eddf;
-    margin-top: 5px;
-    margin-bottom: 40px;
-}
-
-.hero a {
-    padding: 20px 50px;
-    background-color: #FB8500;
-    border-radius: 30px;
-    text-decoration: none;
-    color: #FDF0D5;
-    font-size: large;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.featured {
+.row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    
+    margin: 100px;
 }
 
-.featured h2{
-    margin-right: 50px;
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
 }
 
-.card {
-    width: 300px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    /* margin: 10px; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.col-1 h2 {
+    font-size: 54px;
+
 }
 
-.card figure{
-    width: auto;
-    height: 200px;
-    object-fit: contain;
-}
-.card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+.col-1 h3 {
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: 100;
+    margin: 20px 0 10 px;
+
 }
 
-.card h3 {
-    color: #e28413;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 24px;
-}
-
-.card p {
-    text-align: center;
+.col-1 p {
     font-size: 16px;
-    color: #000022;
-    font-weight: 600;
+    color: rgb(176, 207, 38);
+    font-weight: 100;
+
 }
 
-footer {
-    background-color: #023047;
+.col-1 p {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
     color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+
+}
+
+button img {
+    width: 30px;
+    display: none;
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-1::after {
+    content: ' ';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(rgb(234, 8, 8), rgb(241, 26, 62));
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .controller {
+    width: 90%;
+}
+
+.color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#ff54a2, #ff575a);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.add-btn img {
     text-align: center;
-    padding: 20px;
-    bottom: 0;
-    /* width: 100%; */
+    color: white;
+    cursor: pointer;
+
+}
+
+.social-links img {
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.social-links {
+    text-align: center;
 }
