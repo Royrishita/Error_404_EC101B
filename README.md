@@ -41,6 +41,7 @@ now you are got to go for hacking !!
    -[Screenshots](screeenshots)
    -[Contribution](contribution)
    -[Deploy link]
+   -[Demo Vedio](demo vedio)
 ##Screenshots
     ![Capture PNG1](https://github.com/Royrishita/Error_404_EC101B/assets/143349589/2927063e-4c02-45e5-a1b7-de1526f2ce25)
     ![Capture](https://github.com/Royrishita/Error_404_EC101B/assets/143349589/f0aa131c-db3e-4189-a2b5-32b62e9b63f8)
@@ -51,7 +52,8 @@ now you are got to go for hacking !!
     2.Rishita Roy(@Royrishita)
  ##Deploy Link
     -https://leafy-marshmallow-7e0721.netlify.app/  
-
+ ##Demo Vedio
+    -https://youtu.be/Gie2k2oqXyc?si=YGHpv6v8abN9jV22
 
 
 
